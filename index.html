@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memória Blindada – Pare de Esquecer. Comece a Dominar.</title>
+
+  <!-- FONTES — preconnect primeiro, elimina RTT extra -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="/root-unificado.css">
+  <!-- Meta Pixel Code -->
+<script>
+  !function (f, b, e, v, n, t, s) {
+    if (f.fbq) return; n = f.fbq = function () {
+      n.callMethod ?
+      n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+    n.queue = []; t = b.createElement(e); t.async = !0;
+    t.src = v; s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2365437203939652');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=2365437203939652&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<!-- ═══ NAV ═══ -->
+<nav class="nav">
+  <div class="nav-logo">Memória<span>Blindada</span></div>
+  <a href="https://pay.kiwify.com.br/hVdgY69" class="nav-cta">Começar Agora →</a>
+</nav>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="badge">
+    <span class="badge-dot"></span>
+    Método 15M — Spaced Repetition + Active Recall
+  </div>
+
+  <h1>
+    Você estuda.<br>
+    <em>Você esquece.</em>
+    <span class="line2">E o concurso não espera.</span>
+  </h1>
+
+  <p class="hero-sub">
+    O <strong>Memória Blindada</strong> é uma plataforma web de flashcards inteligentes com algoritmo SRS que prevê exatamente quando seu cérebro vai esquecer e intervém antes. <strong>Cada minuto de estudo vira ponto real na prova.</strong>
+  </p>
+
+  <div class="trust-bar">
+    <div class="trust-item">
+      <span class="stars">★★★★★</span>
+      <strong>4.9</strong>
+      <span>de 5</span>
+    </div>
+    <div class="trust-sep"></div>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      <strong>+19.400</strong> alunos
+    </div>
+    <div class="trust-sep"></div>
+    <div class="trust-item">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+      Acesso imediato
+    </div>
+  </div>
+
+  <div class="social-strip">
+    <div class="avatars">
+      <div class="avatar av1">CL</div>
+      <div class="avatar av2">MR</div>
+      <div class="avatar av3">JS</div>
+      <div class="avatar av4">+</div>
+    </div>
+    <span class="social-text"><strong>847 pessoas</strong> começaram essa semana</span>
+  </div>
+
+  <div class="format-pill">
+    <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+    Plataforma web · acesso imediato pelo navegador · sem instalar nada
+  </div>
+
+  <div class="hero-cta-group">
+    <a href="https://pay.kiwify.com.br/hVdgY69" class="btn-primary">
+      Quero parar de esquecer o que estudo
+      <span class="btn-arrow">→</span>
+    </a>
+    <span class="hero-guarantee">
+      <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
+        <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.25C17.25 22.15 21 17.25 21 12V7L12 2z"/>
+        <polyline points="9 12 11 14 15 10"/>
+      </svg>
+      Garantia de 7 dias sem perguntas, risco zero
+    </span>
+  </div>
+</section>
+
+<!-- ═══ VSL ═══ -->
+<div class="vsl-section">
+  <div class="vsl-inner">
+    <div class="vsl-label">Assista antes de decidir</div>
+    <h2 class="vsl-headline">Veja como o método funciona<br>em menos de 3 minutos</h2>
+    <p class="vsl-sub">Candidatos que assistem ao vídeo têm 3× mais clareza sobre o que muda na prática.</p>
+    <div class="vsl-wrapper">
+      <div class="video-wrapper" id="videoWrapper">
+        <div class="video-thumb" onclick="loadVideo()">
+          <img src="https://i.pinimg.com/736x/3e/1b/b6/3e1bb63ee1145adc3ab00a62799b9f89.jpg" alt="Thumbnail do vídeo">
+          <div class="thumb-overlay"></div>
+          <div class="thumb-text">
+            <span class="thumb-badge">ATENÇÃO</span>
+            <h2>O erro que <span>distrói sua memória</span></h2>
+          </div>
+          <div class="play-button">▷</div>
+        </div>
+      </div>
+    </div>
+    <div class="vsl-cta-below">
+      <p>Já assistiu? Então você sabe o que está perdendo a cada dia sem método.</p>
+      <a href="https://pay.kiwify.com.br/hVdgY69" class="btn-primary" style="display:inline-flex">
+        Quero Começar Agora — R$47
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PROOF BAR ═══ -->
+<div class="proof-bar">
+  <div class="proof-item">
+    <div class="proof-num">+12.400</div>
+    <div class="proof-label">Estudantes<br>ativos</div>
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <div class="proof-num">89%</div>
+    <div class="proof-label">Melhora na<br>retenção (média)</div>
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <div class="stars">★★★★★</div>
+    <div class="proof-label">4.9/5 média de<br>avaliações</div>
+  </div>
+  <div class="proof-sep"></div>
+  <div class="proof-item">
+    <div class="proof-num">15 min</div>
+    <div class="proof-label">Por dia para<br>resultados reais</div>
+  </div>
+</div>
+
+<!-- ═══ PAIN ═══ -->
+<section class="pain">
+  <div class="section-inner">
+    <div class="section-label reveal">O problema real</div>
+    <h2 class="reveal">Você não tem problema<br>de inteligência.<br>Tem um balde furado.</h2>
+    <p class="pain-intro reveal">Não é preguiça. Não é falta de esforço. É o jeito que o cérebro humano funciona — e ninguém te ensinou a contornar isso.</p>
+    <div class="pain-grid">
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>Enxugando Gelo</h3>
+        <p>Você passa 4 horas estudando um tema. Em 15 dias, 80% do conteúdo evaporou. Você recomeça do zero. Estuda de novo. Esquece de novo.</p>
+        <div class="pain-stat">Curva de Ebbinghaus: 80% esquecido em 2 semanas sem revisão</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>O Branco Fatal</h3>
+        <p>Na hora da prova, a mente trava. Você sabe que sabe — mas a informação não vem. O coração acelera. O tempo passa. A vaga escapa.</p>
+        <div class="pain-stat">Estresse reduz o acesso à memória declarativa em até 40%</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>A Ilusão de Saber</h3>
+        <p>Ler e grifar parece produtivo. Mas isso é reconhecimento — não memorização. Você reconhece quando vê. Na prova, precisa recuperar sem ver.</p>
+        <div class="pain-stat">Estudantes superestimam retenção por leitura em 3×</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>O Excesso que Paralisa</h3>
+        <p>Tentar decorar parágrafos inteiros é ineficiente e esgotante. Você se afoga em detalhes sem entender o núcleo do conceito.</p>
+        <div class="pain-stat">Chunks de 12 palavras têm 4× mais retenção que parágrafos</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>Estudar o Que Gosta</h3>
+        <p>Sem um sistema, você revisa o que já domina e ignora o que esqueceu. A lacuna cresce. A prova cobra exatamente onde você foi omisso.</p>
+        <div class="pain-stat">73% dos reprovados dominam 80% do conteúdo mas erram nos 20% restantes</div>
+      </div>
+      <div class="pain-card reveal">
+        <div class="pain-icon"></div>
+        <h3>Tempo que não Volta</h3>
+        <p>Cada hora perdida com revisão ineficiente é uma hora que não volta. Enquanto você roda em círculos, outros avançam com método.</p>
+        <div class="pain-stat">Candidatos sem sistema gastam 3× mais horas para aprovação</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ AGITATE ═══ -->
+<section class="agitate">
+  <div class="agitate-inner">
+    <div class="section-label reveal" style="text-align:center">A Verdade dura</div>
+    <h2 class="reveal">Mais horas de estudo<br>não resolvem.<br><em>Método resolve.</em></h2>
+    <p class="reveal">O candidato que passa não é necessariamente o mais inteligente. É o que tem o sistema de retenção mais eficiente. Ele estuda menos horas — e lembra mais. Porque seu cérebro está treinado para recuperar informação sob pressão, não apenas reconhecê-la.</p>
+  </div>
+</section>
+
+<!-- ═══ SOLUTION ═══ -->
+<section class="solution">
+  <div class="section-inner">
+    <div class="section-label reveal">A solução</div>
+    <h2 class="reveal">O sistema que blinda<br>cada informação na<br><em>memória de longo prazo</em></h2>
+    <p class="solution-intro reveal">O Memória Blindada combina neurociência e engenharia para transformar seu estudo passivo em recuperação ativa — o único jeito de realmente memorizar.</p>
+
+    <div class="features">
+
+      <div class="feature-item reveal">
+        <div>
+          <div class="feature-tag">Algoritmo SRS</div>
+          <h3>Revisão no Momento<br><em>Exato do Esquecimento</em></h3>
+          <p>Nosso algoritmo calcula matematicamente quando seu cérebro está prestes a perder cada informação. Ele intervém antes — trazendo o conteúdo de volta em intervalos que constroem memória de longo prazo.</p>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Intervalos calculados: 24h → 7 dias → 30 dias → consolidado</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Prioriza automaticamente o que você tem mais dificuldade</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Zero cronograma fixo — adapta ao seu ritmo real</div>
+        </div>
+        <div class="mock-ui">
+          <div class="mock-header">
+            <div class="mock-dot" style="background:#ff5f57"></div>
+            <div class="mock-dot" style="background:#febc2e"></div>
+            <div class="mock-dot" style="background:#28c840"></div>
+            <span style="font-size:12px;color:var(--muted);margin-left:8px">Curva de Retenção</span>
+          </div>
+          <div class="curve-chart">
+            <svg class="curve-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+              <path d="M 0 20 Q 40 22 80 55 Q 120 80 160 95 Q 200 105 300 112" fill="none" stroke="rgba(255,68,68,0.4)" stroke-width="2" stroke-dasharray="6,3"/>
+              <path d="M 0 20 L 40 20 Q 42 22 44 35 L 44 35 Q 46 22 48 20 L 100 20 Q 102 22 104 38 L 104 38 Q 106 22 108 20 L 200 20 Q 202 22 204 42 L 204 42 Q 206 22 208 20 L 300 20" fill="none" stroke="var(--accent)" stroke-width="2.5"/>
+              <text x="10" y="115" font-size="9" fill="rgba(255,68,68,0.7)">Sem método</text>
+              <text x="200" y="16" font-size="9" fill="var(--accent)">Com Memória Blindada</text>
+              <text x="0" y="120" font-size="8" fill="var(--muted)">hoje</text>
+              <text x="90" y="120" font-size="8" fill="var(--muted)">7d</text>
+              <text x="190" y="120" font-size="8" fill="var(--muted)">30d</text>
+              <text x="270" y="120" font-size="8" fill="var(--muted)">90d</text>
+            </svg>
+          </div>
+          <div style="display:flex;gap:16px;margin-top:12px;flex-wrap:wrap">
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)"><div style="width:20px;height:2px;background:rgba(255,68,68,0.5)"></div>Estudo comum</div>
+            <div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--muted)"><div style="width:20px;height:2px;background:var(--accent)"></div>Memória Blindada</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item reveal">
+        <div>
+          <div class="feature-tag">Timer Anti-Branco</div>
+          <h3>Treino sob Pressão<br><em>Antes da Prova</em></h3>
+          <p>O cronômetro integrado força você a recuperar a informação em poucos segundos — simulando a urgência real de uma prova. Seu cérebro aprende a acessar caminhos neurais sob estresse.</p>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Condicionamento neurológico: respostas automáticas sob pressão</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Elimina o "branco" por falta de prática com tempo</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Sessões de 15 minutos com máxima intensidade cognitiva</div>
+        </div>
+        <div class="mock-ui">
+          <div class="mock-header">
+            <div class="mock-dot" style="background:#ff5f57"></div>
+            <div class="mock-dot" style="background:#febc2e"></div>
+            <div class="mock-dot" style="background:#28c840"></div>
+            <span style="font-size:12px;color:var(--muted);margin-left:8px">Sessão de Revisão</span>
+          </div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:14px;text-transform:uppercase;letter-spacing:1px">Qual o princípio da legalidade?</div>
+          <div class="timer-display" id="timerDisplay">0:15</div>
+          <div class="timer-label">Tempo para responder</div>
+          <div class="timer-bar"><div class="timer-fill"></div></div>
+          <div style="display:flex;justify-content:space-between;margin-top:20px;gap:8px">
+            <button style="flex:1;padding:10px 6px;border-radius:8px;border:1px solid rgba(255,68,68,0.3);background:rgba(255,68,68,0.08);color:var(--red);font-size:12px;cursor:pointer;font-family:var(--font-body)">Não lembrei</button>
+            <button style="flex:1;padding:10px 6px;border-radius:8px;border:1px solid rgba(245,200,66,0.3);background:rgba(245,200,66,0.08);color:var(--accent);font-size:12px;cursor:pointer;font-family:var(--font-body)">Parcial</button>
+            <button style="flex:1;padding:10px 6px;border-radius:8px;border:1px solid rgba(45,235,143,0.3);background:rgba(45,235,143,0.08);color:var(--green);font-size:12px;cursor:pointer;font-family:var(--font-body)">Lembrei!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item reveal">
+        <div>
+          <div class="feature-tag">Perguntas Gatilho</div>
+          <h3>Recuperação Ativa,<br><em>Não Reconhecimento</em></h3>
+          <p>Você não lê a resposta — você é desafiado a produzi-la. Se não conseguir recuperar, o sistema identifica a falha e aumenta a frequência daquele tópico automaticamente.</p>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Força a recuperação ativa — o único jeito real de memorizar</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Identifica lacunas ocultas que leitura nunca revelaria</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Resumo de 12 palavras: clareza mental imediata por conceito</div>
+        </div>
+        <div class="mock-ui">
+          <div class="mock-header">
+            <div class="mock-dot" style="background:#ff5f57"></div>
+            <div class="mock-dot" style="background:#febc2e"></div>
+            <div class="mock-dot" style="background:#28c840"></div>
+            <span style="font-size:12px;color:var(--muted);margin-left:8px">Pergunta Gatilho</span>
+          </div>
+          <div class="question-card">
+            <div class="question-text">Explique em suas próprias palavras:</div>
+            <div style="font-size:15px;color:var(--white);font-weight:500;margin-bottom:14px">O que é o Princípio da Supremacia da Constituição?</div>
+            <input class="question-input" type="text" placeholder="Digite sua resposta aqui...">
+          </div>
+          <div style="font-size:12px;color:var(--muted);margin-bottom:8px">Seu nível neste tópico:</div>
+          <div class="question-tags">
+            <span class="qtag qtag-hard">Direito Constitucional — Crítico</span>
+            <span class="qtag qtag-medium">3ª revisão hoje</span>
+            <span class="qtag qtag-easy">Adm. Pública OK</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="feature-item reveal">
+        <div>
+          <div class="feature-tag">Dashboard de Diagnóstico</div>
+          <h3>Roteiro de Guerra<br><em>Baseado em Dados</em></h3>
+          <p>Acabou o chute. O dashboard mostra exatamente quais matérias estão com baixa retenção e quais tópicos estão "vencidos". Você acorda sabendo exatamente o que estudar.</p>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Relatório diário: o que estudar, na ordem certa</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Visualiza retenção por matéria e tópico em tempo real</div>
+          <div class="feature-benefit"><svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>Alerta de tópicos críticos antes que se tornem problemas</div>
+        </div>
+        <div class="mock-ui">
+          <div class="mock-header">
+            <div class="mock-dot" style="background:#ff5f57"></div>
+            <div class="mock-dot" style="background:#febc2e"></div>
+            <div class="mock-dot" style="background:#28c840"></div>
+            <span style="font-size:12px;color:var(--muted);margin-left:8px">Dashboard</span>
+          </div>
+          <div class="dash-stats">
+            <div class="dash-stat"><div class="dash-stat-num" style="color:var(--green)">847</div><div class="dash-stat-label">Cards blindados</div></div>
+            <div class="dash-stat"><div class="dash-stat-num" style="color:var(--accent)">23</div><div class="dash-stat-label">Para revisar hoje</div></div>
+          </div>
+          <div style="font-size:11px;color:var(--muted);margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px">Retenção por matéria</div>
+          <div class="dash-bar-row"><div class="dash-bar-label">Dir. Const.</div><div class="dash-bar-track"><div class="dash-bar-fill" style="width:87%;background:var(--green)"></div></div><span style="font-size:12px;color:var(--green)">87%</span></div>
+          <div class="dash-bar-row"><div class="dash-bar-label">Adm. Pública</div><div class="dash-bar-track"><div class="dash-bar-fill" style="width:71%;background:var(--accent)"></div></div><span style="font-size:12px;color:var(--accent)">71%</span></div>
+          <div class="dash-bar-row"><div class="dash-bar-label">Português</div><div class="dash-bar-track"><div class="dash-bar-fill" style="width:42%;background:var(--red)"></div></div><span style="font-size:12px;color:var(--red)">42% ⚠</span></div>
+          <div class="dash-bar-row"><div class="dash-bar-label">Raciocínio</div><div class="dash-bar-track"><div class="dash-bar-fill" style="width:93%;background:var(--green)"></div></div><span style="font-size:12px;color:var(--green)">93%</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ COMPARISON ═══ -->
+<section class="comparison">
+  <div class="section-inner">
+    <div class="section-label reveal">Comparativo</div>
+    <h2 class="reveal">Por que o estudo casual<br>continuam falhando com você</h2>
+    <div class="comparison-table reveal">
+      <div class="comp-header">Funcionalidade</div>
+      <div class="comp-header">Estudo Comum</div>
+      <div class="comp-header">🛡️ Memória Blindada</div>
+      <div class="comp-row"><div class="comp-cell">Revisão baseada em ciência (SRS)</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Sabe exatamente o que estudar todo dia</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Treino anti-branco com pressão de tempo</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Algoritmo adaptativo às suas dificuldades</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Diagnóstico de lacunas por matéria</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Resumo de 12 palavras por conceito</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+      <div class="comp-row"><div class="comp-cell">Resultado em 15 min/dia</div><div class="comp-cell"><span class="comp-x">✗</span></div><div class="comp-cell"><span class="comp-check">✓</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-label reveal" style="text-align:center">Resultados reais</div>
+    <h2 class="reveal">Quem já blindou a memória</h2>
+    <p class="testimonials-sub reveal">Pessoas reais. Provas reais. Resultados que falam por si.</p>
+    <div class="testi-grid">
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Estudei 3 anos para a PF sem aprovação. Com o Memória Blindada, em 4 meses minha retenção em Direito Constitucional foi de 40% para <em>94%</em>. Passei na última fase."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1695927621677-ec96e048dce2?q=80&w=735&auto=format&fit=crop');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Marcos V.</div><div class="testi-meta">Aprovado — Polícia Federal</div></div>
+        </div>
+        <div class="testi-result">✓ Aprovado após 3 anos de tentativas</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"O Timer Anti-Branco salvou minha vida na prova da OAB. Treinei tanto a recuperar informação sob pressão que na hora do exame, parecia <em>automático</em>."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://plus.unsplash.com/premium_photo-1679865370833-afc03f8b0632?q=80&w=687&auto=format&fit=crop');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Ana Clara R.</div><div class="testi-meta">OAB 2ª Fase aprovada</div></div>
+        </div>
+        <div class="testi-result">✓ Zero brancos na prova — 1ª tentativa</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Usava 6 horas por dia de estudo e não progredia. Com 15 minutos de revisão diária no app, meu aproveitamento nos simulados saltou <em>31 pontos</em> em 60 dias."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1557862921-37829c790f19?q=80&w=1171&auto=format&fit=crop');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Rafael T.</div><div class="testi-meta">ENEM — medicina</div></div>
+        </div>
+        <div class="testi-result">✓ +31 pontos em 60 dias de uso</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"O Dashboard me mostrou que eu ignorava completamente Raciocínio Lógico. Concentrei ali por 3 semanas. Fui de 40% a <em>82% de acertos</em> nessa matéria."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1567662810010-05f4f9896cb2?w=500&auto=format&fit=crop&q=60');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Carolina M.</div><div class="testi-meta">Concurso INSS</div></div>
+        </div>
+        <div class="testi-result">✓ 40% → 82% em Raciocínio Lógico</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"Mãe de 2 filhos, trabalho 8h por dia. Não tinha tempo a perder. O Método 15M encaixou perfeito na minha rotina. Em 5 meses, <em>aprovada no TRT</em>."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1561642873-f96d911cb887?w=500&auto=format&fit=crop&q=60');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Fernanda L.</div><div class="testi-meta">Analista — TRT Sul</div></div>
+        </div>
+        <div class="testi-result">✓ Aprovada com 15 min/dia de revisão</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-stars">★★★★★</div>
+        <p class="testi-text">"O Resumo de 12 Palavras mudou como processo conteúdo. Quando consigo condensar, eu SEI que entendi. Quando não consigo, sei que ainda não sei. <em>É um detector de falhas.</em>"</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background-image:url('https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=1176&auto=format&fit=crop');background-size:cover;background-position:center"></div>
+          <div><div class="testi-name">Gustavo P.</div><div class="testi-meta">Residência Médica</div></div>
+        </div>
+        <div class="testi-result">✓ Aprovado na 1ª tentativa de residência</div>
+        <div class="testi-source"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>Avaliação via Kiwify · verificada</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ OBJECTIONS ═══ -->
+<section class="objections">
+  <div class="section-inner">
+    <div class="section-label reveal">Suas dúvidas</div>
+    <h2 class="reveal">Quebrando as objeções<br>antes que você feche<br>essa página</h2>
+    <div class="obj-list">
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"Não tenho tempo. Já estou sobrecarregado."</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Esse é exatamente o seu problema — não a solução.</strong> Você não tem tempo porque revisa de forma ineficiente, repetindo conteúdo que já sabe e ignorando o que esqueceu. O Memória Blindada te dá uma sessão de 15 minutos por dia com máxima eficiência. Na verdade, você vai <em>ganhar</em> tempo porque vai parar de estudar o que já sabe.</div></div></div>
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"Já tentei flashcards antes. Não funcionou."</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Flashcard comum é uma ferramenta. O Memória Blindada é um sistema.</strong> A diferença é o algoritmo SRS combinado com Timer Anti-Branco e Perguntas Gatilho. Flashcard manual não calcula quando você vai esquecer. Não te treina sob pressão. Não diagnostica suas lacunas. É como comparar uma balança de cozinha com um GPS — são categorias diferentes.</div></div></div>
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"Estou com pouco dinheiro. Não é momento de investir."</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Calcule o custo de mais um ano reprovado.</strong> Cursinhos custam R$200–800 <em>por mês</em>. O salário perdido de um cargo público pode ser R$5.000–15.000/mês. O Memória Blindada é R$47 uma única vez — menos que um jantar. Sem mensalidade nunca mais.</div></div></div>
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"Como funciona o acesso? Preciso instalar alguma coisa?"</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Acesso 100% pelo navegador — sem instalar nada.</strong> Após confirmar o pagamento você recebe um e-mail com seu login. Acessa pelo computador, celular ou tablet. A interface foi desenhada para ser imediata — em 5 minutos você já tem sua primeira sessão rodando.</div></div></div>
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"15 minutos por dia não parece suficiente."</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Não é sobre quantidade — é sobre timing e intensidade.</strong> 15 minutos de recuperação ativa no momento exato do esquecimento vale mais que 3 horas de leitura passiva. A neurociência é clara: o que consolida memória não é o tempo que você passa estudando, mas a frequência com que você é forçado a recuperar a informação.</div></div></div>
+      <div class="obj-item reveal"><div class="obj-q" onclick="toggleObj(this)"><span>"E se eu já estiver perto da prova?"</span><span class="obj-icon">+</span></div><div class="obj-a"><div class="obj-a-inner"><strong>Esse é o melhor momento para começar.</strong> O algoritmo detecta automaticamente o que está mais fraco e prioriza. Em uma semana de uso intensivo pré-prova, você vai revelar lacunas que não sabia que tinha — e ainda haverá tempo de atacá-las.</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GUARANTEE ═══ -->
+<div class="guarantee-section">
+  <div class="guarantee-inner">
+    <div class="guarantee-icon">🛡️</div>
+    <div class="guarantee-text">
+      <h3>Garantia Blindada de 7 Dias</h3>
+      <p>Teste o sistema por 7 dias completos. Use todas as funcionalidades. Se não sentir diferença real na sua retenção — <strong>devolvemos cada centavo, sem perguntas, sem burocracia</strong>. É só mandar um e-mail para suporte@trafficlabs.online. O risco é 100% nosso. O ganho é 100% seu.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ PRICING ═══ -->
+<section class="pricing" id="pricing">
+  <div class="section-inner">
+    <div class="pricing-header">
+      <div class="section-label reveal" style="text-align:center">Investimento</div>
+      <h2 class="reveal">Quanto custa perder<br>mais um ano de estudo?</h2>
+      <p class="pricing-sub reveal">Um cursinho custa R$300/mês. Uma reprovação custa 12 meses da sua vida. O Memória Blindada custa menos que uma pizza.</p>
+    </div>
+    <div class="price-card-single reveal">
+      <div class="popular-badge">🛡️ ACESSO COMPLETO — PAGAMENTO ÚNICO</div>
+      <div class="price-plan" style="margin-top:10px">Memória Blindada — Método 15M</div>
+      <div class="price-anchor">De <s>R$197</s> por apenas</div>
+      <div class="price-amount"><sup>R$</sup>47</div>
+      <div class="price-installment">ou <strong>4× de R$12,75</strong> sem juros no cartão</div>
+      <div class="price-once">✓ Pagamento único — sem mensalidade, sem surpresas</div>
+      <div class="price-equiv">Menos que <strong style="color:var(--text)">R$1,57 por dia</strong> de acesso vitalício ao método</div>
+      <div class="price-divider"></div>
+      <div class="price-bonus">
+        <div class="price-bonus-title">O que você recebe agora</div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Plataforma web com algoritmo SRS adaptativo</span><span class="price-bonus-value">R$97</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Timer Anti-Branco — treinamento sob pressão</span><span class="price-bonus-value">R$47</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Dashboard de Diagnóstico completo</span><span class="price-bonus-value">R$37</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Método Resumo de 12 Palavras + Analogia</span><span class="price-bonus-value">R$27</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Flashcards ilimitados — todas as matérias</span><span class="price-bonus-value">incluso</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Decks prontos de concursos mais cobrados</span><span class="price-bonus-value">R$47</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Relatórios de evolução e retenção por matéria</span><span class="price-bonus-value">incluso</span></div>
+        <div class="price-bonus-item"><svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Atualizações futuras sem custo adicional</span><span class="price-bonus-value">incluso</span></div>
+        <div class="price-bonus-total"><span>Valor total do que você leva</span><span>R$255 de valor · hoje por R$47</span></div>
+      </div>
+      <a href="https://pay.kiwify.com.br/hVdgY69" class="btn-featured" style="font-size:17px;padding:18px">Quero Acesso Agora por R$47 →</a>
+      <div style="margin-top:20px">
+        <div class="payment-badges">
+          <span class="pay-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>Cartão de crédito</span>
+          <span class="pay-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>PIX</span>
+          <span class="pay-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2M9 5a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2M9 5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2"/></svg>Boleto</span>
+          <span class="pay-badge"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>100% seguro</span>
+        </div>
+        <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px">Ambiente de pagamento Kiwify — criptografado e seguro</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FINAL CTA ═══ -->
+<section class="final-cta">
+  <div class="section-label reveal" style="text-align:center;color:var(--accent2)">⚡ Preço de lançamento</div>
+  <h2 class="reveal">Cada dia sem método<br>é um ponto a menos<br>na <em>sua</em> prova.</h2>
+  <p class="reveal" style="position:relative">O desconto de lançamento (de R$197 por R$47) é válido enquanto estiver ativo nesta página.</p>
+  <div style="position:relative;padding:0 20px">
+    <a href="https://pay.kiwify.com.br/hVdgY69" class="btn-primary" style="font-size:19px;padding:20px 52px">
+      Quero Blindar Minha Memória Agora
+      <span class="btn-arrow">→</span>
+    </a>
+    <p style="margin-top:18px;font-size:13px;color:var(--muted)">🛡️ 15 dias de garantia total · Acesso imediato pelo navegador · Sem mensalidade</p>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">Memória<span>Blindada</span></div>
+    <div class="footer-links">
+      <a href="/termos-de-uso.html">Termos de Uso</a>
+      <a href="/politica-de-privacidade.html">Política de Privacidade</a>
+      <a href="mailto:suporte@memoriablinada.com.br">Suporte</a>
+      <a href="/blog">Blog</a>
+    </div>
+    <div class="footer-legal">
+      <p>Este produto é distribuído digitalmente via Kiwify. O acesso é fornecido após confirmação do pagamento pelo e-mail cadastrado.</p>
+      <p style="margin-top:8px">Os resultados descritos nos depoimentos são individuais e podem variar conforme dedicação e consistência de uso da plataforma. Não constituem garantia de aprovação em concursos ou provas específicas.</p>
+      <p style="margin-top:8px">Em caso de dúvidas ou solicitação de reembolso dentro do prazo de garantia, entre em contato: <a href="mailto:suporte@trafficlabs.online">suporte@trafficlabs.online</a></p>
+      <p class="footer-cnpj">© 2025 Memória Blindada · Método 15M™ é uma marca registrada</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ═══ BOTÃO FLUTUANTE MOBILE ═══ -->
+<div class="cta-float" id="ctaFloat">
+  <a href="https://pay.kiwify.com.br/hVdgY69">
+    Quero Acesso por R$47 →
+  </a>
+</div>
+
+<!-- ═══ SCRIPTS ═══ -->
+<script>
+// ── SCROLL REVEAL ──
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+// ── ACCORDION ──
+function toggleObj(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.obj-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+
+// ── TIMER MOCK ──
+let timerVal = 15;
+const timerEl = document.getElementById('timerDisplay');
+if (timerEl) {
+  setInterval(() => {
+    timerVal = timerVal <= 0 ? 15 : timerVal - 1;
+    timerEl.textContent = `0:${String(timerVal).padStart(2,'0')}`;
+    timerEl.style.color = timerVal <= 5 ? 'var(--red)' : 'var(--accent)';
+  }, 1000);
+}
+
+// ── STAGGERED REVEAL ──
+document.querySelectorAll('.pain-grid .pain-card, .testi-grid .testi-card').forEach((el, i) => {
+  el.style.transitionDelay = `${i * 80}ms`;
+});
+
+// ── BOTÃO FLUTUANTE: esconde quando CTA principal está visível ──
+const heroBtn = document.querySelector('.hero .btn-primary');
+const ctaFloat = document.getElementById('ctaFloat');
+if (heroBtn && ctaFloat) {
+  const heroObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      ctaFloat.style.opacity = entry.isIntersecting ? '0' : '1';
+      ctaFloat.style.pointerEvents = entry.isIntersecting ? 'none' : 'all';
+    });
+  }, { threshold: 0.5 });
+  heroObserver.observe(heroBtn);
+}
+
+// ── VIDEO LOAD ──
+function loadVideo() {
+  const wrapper = document.getElementById('videoWrapper');
+  wrapper.innerHTML = `
+    <iframe
+      src="https://fast.wistia.net/embed/iframe/yjueaz2kdh?autoplay=1"
+      frameborder="0"
+      allow="autoplay; fullscreen"
+      allowfullscreen
+      style="width:100%;height:100%;border-radius:12px;">
+    </iframe>`;
+}
+
+// ── COUNTDOWN ──
+(function() {
+  var key = 'mb_deadline';
+  var stored = sessionStorage.getItem(key);
+  var deadline;
+  if (stored) {
+    deadline = parseInt(stored, 10);
+  } else {
+    deadline = Date.now() + (2 * 3600 + 47 * 60) * 1000;
+    sessionStorage.setItem(key, deadline);
+  }
+  function pad(n) { return n < 10 ? '0' + n : n; }
+  function tick() {
+    var diff = Math.max(0, deadline - Date.now());
+    var h = Math.floor(diff / 3600000);
+    var m = Math.floor((diff % 3600000) / 60000);
+    var s = Math.floor((diff % 60000) / 1000);
+    var el = document.getElementById('countdown');
+    if (el) el.textContent = h + ':' + pad(m) + ':' + pad(s);
+    if (diff > 0) setTimeout(tick, 1000);
+  }
+  tick();
+})();
+
+
+</script>
+
+</body>
+</html>
